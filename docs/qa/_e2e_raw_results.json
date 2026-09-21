@@ -1,0 +1,255 @@
+{
+  "results": [
+    {
+      "step": "env.health",
+      "ok": true,
+      "detail": "{\"status\": \"ok\", \"service\": \"buildwyse-api\", \"memory_mode\": false, \"supabase_configured\": true, \"using_service_role\": true, \"ai_mode\": \"live\", \"openai_live\": true}"
+    },
+    {
+      "step": "auth.client_login",
+      "ok": true,
+      "detail": "vedantlanjekar456@gmail.com"
+    },
+    {
+      "step": "auth.freelancer_login",
+      "ok": true,
+      "detail": "valmet.intern@gmail.com"
+    },
+    {
+      "step": "auth.client_role",
+      "ok": true,
+      "detail": "['CLIENT']"
+    },
+    {
+      "step": "auth.freelancer_role",
+      "ok": true,
+      "detail": "['FREELANCER']"
+    },
+    {
+      "step": "security.client_admin_blocked",
+      "ok": true,
+      "detail": "403"
+    },
+    {
+      "step": "project.create",
+      "ok": true,
+      "detail": "4b638ecd-0292-4314-a16c-5212075b10aa"
+    },
+    {
+      "step": "ai.research",
+      "ok": true,
+      "detail": "{'market_context': 'BuildWyse.in operates in the growing freelance and project management market, which is increasingly driven by the need for efficient collaboration between businesses and skilled pr"
+    },
+    {
+      "step": "ai.requirements_chat",
+      "ok": true,
+      "detail": "conversation=c01f1323-d216-43cf-b154-00275fa50bb7"
+    },
+    {
+      "step": "requirements.approve",
+      "ok": true,
+      "detail": "count=5"
+    },
+    {
+      "step": "state.REQUIREMENT_DISCUSSION",
+      "ok": true,
+      "detail": "REQUIREMENT_DISCUSSION"
+    },
+    {
+      "step": "state.DOCUMENTATION_PREPARATION",
+      "ok": true,
+      "detail": "DOCUMENTATION_PREPARATION"
+    },
+    {
+      "step": "state.DOCUMENTATION_REVIEW",
+      "ok": true,
+      "detail": "DOCUMENTATION_REVIEW"
+    },
+    {
+      "step": "state.BUDGET_PLANNING",
+      "ok": true,
+      "detail": "BUDGET_PLANNING"
+    },
+    {
+      "step": "state.DEVELOPMENT_PREFERENCE",
+      "ok": true,
+      "detail": "DEVELOPMENT_PREFERENCE"
+    },
+    {
+      "step": "state.FREELANCER_MATCHING",
+      "ok": true,
+      "detail": "FREELANCER_MATCHING"
+    },
+    {
+      "step": "documents.generate_list",
+      "ok": true,
+      "detail": "count=7"
+    },
+    {
+      "step": "documents.pdf",
+      "ok": true,
+      "detail": "ok=7 fail=0"
+    },
+    {
+      "step": "documents.regenerate",
+      "ok": true,
+      "detail": "{'document': {'id': '92022109-4113-4950-bbe0-2a78fb86d4bc', 'project_id': '4b638ecd-0292-4314-a16c-5212075b10aa', 'docum"
+    },
+    {
+      "step": "documents.pdf_after_regen",
+      "ok": true,
+      "detail": "bytes=4324"
+    },
+    {
+      "step": "budget.estimate",
+      "ok": true,
+      "detail": "{'budgets': [{'id': 'd87e4c39-e30a-4836-84f0-7da5ec71b4b7', 'project_id': '4b638ecd-0292-4314-a16c-5212075b10aa', 'budget_type': 'individual', 'amount': 180000.0, 'currency': 'INR', 'min_amount': 1200"
+    },
+    {
+      "step": "dev_preference.individual",
+      "ok": true,
+      "detail": "individual"
+    },
+    {
+      "step": "matching.top_candidates",
+      "ok": true,
+      "detail": "count=10"
+    },
+    {
+      "step": "matching.select",
+      "ok": true,
+      "detail": "bfe82aed-9787-487d-818e-23759d792880"
+    },
+    {
+      "step": "state.TECHNICAL_REVIEW",
+      "ok": true,
+      "detail": "TECHNICAL_REVIEW"
+    },
+    {
+      "step": "state.CLIENT_FREELANCER_DISCUSSION",
+      "ok": true,
+      "detail": "CLIENT_FREELANCER_DISCUSSION"
+    },
+    {
+      "step": "state.AGREEMENT",
+      "ok": true,
+      "detail": "AGREEMENT"
+    },
+    {
+      "step": "state.EXECUTION",
+      "ok": true,
+      "detail": "EXECUTION"
+    },
+    {
+      "step": "freelancer.proposal",
+      "ok": true,
+      "detail": "{'id': '628dfc10-4ec8-4ee1-9f15-d27a32f6da71', 'project_id': '4b638ecd-0292-4314-a16c-5212075b10aa', 'candidate_id': None, 'title': 'Technical Proposal', 'appro"
+    },
+    {
+      "step": "execution.phase",
+      "ok": true,
+      "detail": "4014b886-1a56-4f9a-b336-2b73f8966c8d"
+    },
+    {
+      "step": "calendar.client",
+      "ok": true,
+      "detail": "<class 'list'>"
+    },
+    {
+      "step": "execution.submission",
+      "ok": true,
+      "detail": "2d0b8f23-fb53-4c04-bcda-48780079f833"
+    },
+    {
+      "step": "execution.evidence",
+      "ok": true,
+      "detail": "{'id': 'd268fcdd-8bfc-4cc2-979a-7daa46d3b586', 'submission_id': '2d0b8f23-fb53-4c04-bcda-48780079f833', 'milestone_id': "
+    },
+    {
+      "step": "ai.verification",
+      "ok": true,
+      "detail": "{'overall_result': 'pass', 'compliance_score': 85.0, 'findings': ['The homepage draft meets the basic design and functionality requirements.', 'The deployment i"
+    },
+    {
+      "step": "execution.reject",
+      "ok": true,
+      "detail": "{'status': 'REVISION_REQUIRED', 'rejection': {'id': 'b872d7dc-d765-4645-b307-bb707f37a16f', 'project_id': '4b638ecd-0292"
+    },
+    {
+      "step": "execution.resubmit",
+      "ok": true,
+      "detail": "44155f50-83f9-4ac8-a6ca-6f0d01b7f6bf"
+    },
+    {
+      "step": "security.freelancer_cannot_approve",
+      "ok": true,
+      "detail": "POST /submissions/approve -> 403: {\"detail\":\"Only the project client can approve"
+    },
+    {
+      "step": "execution.approve",
+      "ok": true,
+      "detail": "{'approval': {'id': 'f9b64a1c-c397-47a0-b174-3ff2ae85bce3', 'project_id': '4b638ecd-0292-4314-a16c-5212075b10aa', 'entit"
+    },
+    {
+      "step": "payment.simulated",
+      "ok": true,
+      "detail": "{\"payment_order\":{\"id\":\"4196a9f1-6eba-4c21-85d7-244c668f13f9\",\"project_id\":\"4b638ecd-0292-4314-a16c-5212075b10aa\",\"client_id\":\"1f275278-4fbd-4998-8c9b-6966d93ddb43\",\"order_type\":\"milestone\",\"amount\":\""
+    },
+    {
+      "step": "project.health",
+      "ok": true,
+      "detail": "{'assessment': {'project_id': '4b638ecd-0292-4314-a16c-5212075b10aa', 'overall_status': 'healthy', 'health_score': 100.0, 'metrics': {'total_phases': 1, 'approv"
+    },
+    {
+      "step": "crms.create",
+      "ok": true,
+      "detail": "{'id': 'de7520d9-7536-4695-9bfa-95b7430665fd', 'project_id': '4b638ecd-0292-4314-a16c-5212075b10aa', 'requested_by': '1f275278-4fbd-4998-8c9b-6966d93ddb43', 'ti"
+    },
+    {
+      "step": "assm.classify_small",
+      "ok": true,
+      "detail": "{'classification': 'AFTER_SALES_SERVICE', 'reason': 'Request within after-sales thresholds', 'thresholds': {'scope_expan"
+    },
+    {
+      "step": "assm.classify_large",
+      "ok": true,
+      "detail": "{'classification': 'NEW_PROJECT', 'reason': 'Scope expansion 80.0% exceeds 30.0%; Effort 400.0h exceeds 40.0h', 'thresho"
+    },
+    {
+      "step": "state.EXECUTION",
+      "ok": true,
+      "detail": "EXECUTION"
+    },
+    {
+      "step": "state.PHASE_VERIFICATION",
+      "ok": true,
+      "detail": "PHASE_VERIFICATION"
+    },
+    {
+      "step": "state.COMPLETED",
+      "ok": true,
+      "detail": "COMPLETED"
+    },
+    {
+      "step": "assm.create",
+      "ok": true,
+      "detail": "{'id': '9409afe9-c359-46e5-a8bb-d9881065975f', 'project_id': '4b638ecd-0292-4314-a16c-5212075b10aa', 'requested_by': '1f275278-4fbd-4998-8c9b-6966d93ddb43', 'ti"
+    },
+    {
+      "step": "certificates.issue",
+      "ok": true,
+      "detail": "{'id': '66b24736-d231-41b2-9e02-ebabed9a164c', 'project_id': '4b638ecd-0292-4314-a16c-5212075b10aa', 'certificate_number': 'BW-20260909-4B638ECD', 'certificate_type': 'project_completion', 'issued_to'"
+    },
+    {
+      "step": "documents.pdf_persist",
+      "ok": true,
+      "detail": "ok=7"
+    },
+    {
+      "step": "security.freelancer_admin_blocked",
+      "ok": true,
+      "detail": "GET /admin/users -> 403: {\"detail\":\"Admin access required\"}"
+    }
+  ],
+  "defects": []
+}
