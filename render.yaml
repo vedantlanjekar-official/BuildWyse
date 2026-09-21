@@ -1,0 +1,46 @@
+services:
+  - type: web
+    name: buildwyse-api
+    runtime: docker
+    plan: free
+    region: singapore
+    dockerfilePath: ./backend/Dockerfile
+    dockerContext: .
+    healthCheckPath: /health
+    envVars:
+      - key: PYTHONUNBUFFERED
+        value: "1"
+      - key: DEBUG
+        value: "false"
+      - key: FORCE_MEMORY_STORE
+        value: "false"
+      - key: AI_MODE
+        value: live
+      - key: EMAIL_MODE
+        value: resend
+      - key: IDENTITY_MODE
+        value: simulated
+      - key: PAYMENT_MODE
+        value: sandbox
+      - key: PLATFORM_COMMISSION_RATE
+        value: "0.10"
+      - key: FRONTEND_URL
+        value: https://buildwyse.vercel.app
+      - key: BACKEND_URL
+        value: https://buildwyse-api.onrender.com
+      - key: SUPABASE_URL
+        sync: false
+      - key: SUPABASE_ANON_KEY
+        sync: false
+      - key: SUPABASE_SERVICE_ROLE_KEY
+        sync: false
+      - key: SUPABASE_JWT_SECRET
+        sync: false
+      - key: OPENAI_API_KEY
+        sync: false
+      - key: EMAIL_API_KEY
+        sync: false
+      - key: EMAIL_FROM
+        sync: false
+      - key: CONTACT_TO_EMAIL
+        sync: false

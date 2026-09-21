@@ -32,6 +32,7 @@ class Settings(BaseSettings):
 
     frontend_url: str = Field(default="http://localhost:5173", alias="FRONTEND_URL")
     backend_url: str = Field(default="http://localhost:8000", alias="BACKEND_URL")
+    extra_cors_origins: str = Field(default="", alias="CORS_ORIGINS")
     platform_commission_rate: float = Field(default=0.10, alias="PLATFORM_COMMISSION_RATE")
 
     email_api_key: str = Field(default="", alias="EMAIL_API_KEY")
@@ -62,6 +63,21 @@ class Settings(BaseSettings):
         if self.email_mode == "console":
             return True
         return self.email_mode == "resend" and bool(self.email_api_key)
+
+    @property
+    def cors_origin_list(self) -> list[str]:
+        origins = [
+            self.frontend_url,
+            "http://localhost:5173",
+            "http://127.0.0.1:5173",
+        ]
+        if self.extra_cors_origins:
+            origins.extend(
+                origin.strip()
+                for origin in self.extra_cors_origins.split(",")
+                if origin.strip()
+            )
+        return list(dict.fromkeys(origins))
 
 
 @lru_cache
