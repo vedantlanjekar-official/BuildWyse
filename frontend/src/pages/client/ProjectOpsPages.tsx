@@ -378,7 +378,7 @@ export function ProjectPaymentsPage() {
                   <p className="mt-2 text-sm text-[var(--color-muted-foreground)]">
                     {String(p.description ?? p.order_type ?? 'Payment order')}
                   </p>
-                  {(p.phase_name || p.milestone_title) && (
+                  {Boolean(p.phase_name || p.milestone_title) && (
                     <p className="mt-1 text-xs text-[#0f6b5c]">
                       {[p.phase_name, p.milestone_title].filter(Boolean).map(String).join(' · ')}
                     </p>

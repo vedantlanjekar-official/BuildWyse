@@ -16,6 +16,7 @@ import { useMutation, useQuery, useQueryClient } from '@tanstack/react-query'
 import {
   Award,
   Briefcase,
+  CheckCircle2,
   ExternalLink,
   Globe,
   Link2,

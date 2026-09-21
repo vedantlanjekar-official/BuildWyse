@@ -157,7 +157,7 @@ export function ProjectDetailPage() {
   const requirements = requirementsQ.data ?? []
   const documents = (documentsQ.data ?? []) as Row[]
   const changes = (changesQ.data ?? []) as Row[]
-  const calendar = (calendarQ.data ?? []) as Row[]
+  const calendar = (calendarQ.data ?? []) as unknown as Row[]
   const candidates = (matchingQ.data?.candidates ?? []) as Row[]
   const health = (healthQ.data ?? {}) as Row
   const freelancer = freelancerQuery.data
